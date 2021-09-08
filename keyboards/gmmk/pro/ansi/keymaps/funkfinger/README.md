@@ -1,6 +1,6 @@
 # My QMK Keymap for QMK / GMMK Pro
 
-What I wat
+## What I Want
 
 -   Mac-like functionality
 -   per led control - I really only want one led and cap-lock indicator
