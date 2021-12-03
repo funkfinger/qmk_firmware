@@ -1,9 +1,14 @@
 {
-    "keyboard_name": "my_number_pad",
+    "keyboard_name": "e6",
     "url": "",
     "maintainer": "funkfinger",
     "width": 3,
     "height": 2,
+    "diode_direction": "ROW2COL",
+    "matrix_pins": {
+        "row": ["C6", "D7"],
+        "col": ["E6", "B4", "B5"]
+    },
     "layouts": {
       "LAYOUT_e6": {
         "key_count": 6,
@@ -15,3 +20,4 @@
       }
     }
 }
+
