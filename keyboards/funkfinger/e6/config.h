@@ -6,17 +6,18 @@
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x6060
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    qmkbuilder
+#define MANUFACTURER    funkfinger
 #define PRODUCT         e6
-#define DESCRIPTION     e6
+#define DESCRIPTION     Six keys and an encoder
 
 /* key matrix size */
-#define MATRIX_ROWS 2
+#define MATRIX_ROWS 3
 #define MATRIX_COLS 3
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { C6, D7 }
+#define MATRIX_ROW_PINS { C6, D7, F6 }
 #define MATRIX_COL_PINS { E6, B4, B5 }
+// #define DIRECT_PINS { F6 }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
@@ -39,6 +40,14 @@
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
 
+// #define ENCODERS_PAD_A { 36 }
+// #define ENCODERS_PAD_B { 38 }
+
+#define ENCODERS_PAD_A \
+    { F7 }
+#define ENCODERS_PAD_B \
+    { F5 }
+
 #define RGB_DI_PIN B6
 #ifdef RGB_DI_PIN
 #define RGBLIGHT_ANIMATIONS
@@ -46,5 +55,7 @@
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
+#define RGBLIGHT_DEFAULT_VAL 100
+#define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_RAINBOW_MOOD
 #endif
 
