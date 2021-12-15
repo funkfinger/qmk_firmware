@@ -10,7 +10,7 @@
 #define PRODUCT         e6
 #define DESCRIPTION     "Six keys and an encoder"
 
-/* key matrix size */
+
 #define MATRIX_ROWS 3
 #define MATRIX_COLS 3
 
@@ -21,7 +21,7 @@
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
-#define DIODE_DIRECTION ROW2COL
+#define DIODE_DIRECTION COL2ROW
 
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCING_DELAY 5
@@ -42,16 +42,15 @@
 
 // #define ENCODERS_PAD_A { 36 }
 // #define ENCODERS_PAD_B { 38 }
-
-#define ENCODERS_PAD_A \
-    { F7 }
-#define ENCODERS_PAD_B \
-    { F5 }
+// #define ENCODER_ENABLE
+#define ENCODERS_PAD_A { F7 }
+#define ENCODERS_PAD_B { F5 }
 
 #define RGB_DI_PIN B6
 #ifdef RGB_DI_PIN
 #define RGBLIGHT_ANIMATIONS
 #define RGBLED_NUM 10
+#define DRIVER_LED_TOTAL 10
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
