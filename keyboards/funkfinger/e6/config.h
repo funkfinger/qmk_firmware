@@ -8,7 +8,7 @@
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    funkfinger
 #define PRODUCT         e6
-#define DESCRIPTION     Six keys and an encoder
+#define DESCRIPTION     "Six keys and an encoder"
 
 /* key matrix size */
 #define MATRIX_ROWS 3
